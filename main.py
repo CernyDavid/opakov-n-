@@ -94,3 +94,87 @@ def outer_function():
 a = 10
 outer_function()
 print('a =', a)
+
+num = 3
+if num > 0:
+    print(num, "je kladné")
+print("This is always printed")
+
+num = -1
+if num > 0:
+    print(num, "je kladné")
+print("This is also always printed")
+
+number = 3
+if number >= 0:
+    print("kladné nebo nula")
+else:
+    print("záporné")
+
+num = -4.5
+if num > 0:
+    print("kladné")
+elif num == 0:
+    print("nula")
+else:
+    print("záporné")
+
+num = float(input("Zadejte číslo: "))
+if num >= 0:
+    if num == 0:
+        print("Nula")
+    else:
+        print("Kladné")
+else:
+    print("záporné")
+
+numbers = [6, 5, 3, 8, 4, 2, 5, 4, 11]
+sum = 5
+for val in numbers:
+    sum = sum+val
+
+print("The sum is", sum)
+print(range(10))
+print(list(range(10)))
+print(list(range(2, 8)))
+print(list(range(2, 20, 3)))
+
+genre = ['pop', 'rock', 'jazz']
+for i in range(len(genre)):
+    print("I like", genre[i])
+
+digits = [0, 1, 5]
+for i in digits:
+    print(i)
+else:
+    print("Nic nezbylo")
+
+student_name = "Standa Uzdichcal"
+
+marks = {"James": 90, "Jules": 55, "Arthur": 77}
+
+for student in marks:
+    if student == student_name:
+        print(marks[student])
+        break
+else:
+    print("Nenalezeno")
+
+n = 15
+sum = 0
+i = 1
+
+while i <= n:
+    sum = sum + i
+    i = i+1 
+
+print("The sum is", sum)
+
+cislo = 0
+
+while cislo < 3:
+    print("Inside loop")
+    cislo = cislo + 1
+else:
+    print("Inside else")
+
